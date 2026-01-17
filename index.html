@@ -76,6 +76,7 @@
         box-shadow: 0 15px 40px rgba(0,0,0,0.1);
       }
       
+      /* 🔥 MODEL VIEWER CON AJUSTES AR OPTIMIZADOS */
       model-viewer {
         width: 100%;
         height: 400px;
@@ -83,6 +84,13 @@
         box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         background-color: #ffffff;
         margin-bottom: 15px;
+        --progress-bar-height: 4px;
+        --poster-transition: all 0.5s ease;
+      }
+      
+      /* 📱 AR - Siempre en suelo/mesa */
+      model-viewer[ar] {
+        --ar-placement: "floor";
       }
       
       .whatsapp-btn {
@@ -147,6 +155,11 @@
       
       @media (max-width: 900px) {
         .galeria { flex-direction: column; align-items: center; }
+        model-viewer { height: 350px; }
+      }
+      
+      @media (max-width: 480px) {
+        model-viewer { height: 300px; }
       }
     </style>
   </head>
@@ -154,52 +167,74 @@
     <!-- ===== 🎯 HEADER SEO PRINCIPAL ===== -->
     <div class="hero">
       <h1>🖼️ Modelos 3D Interactivos de Muebles y Decoración en Caracas</h1>
-      <p>Explora sillas modernas, lámparas LED y decoración 3D. <strong>Envíos a todo Venezuela</strong>. Consulta precios por WhatsApp.</p>
+      <p>Explora sillas modernas, lámparas LED y decoración 3D. <strong>Envíos a todo Venezuela</strong>. <strong>Realidad Aumentada disponible</strong>. Consulta precios por WhatsApp.</p>
     </div>
 
     <div class="container">
-      <!-- 🔥 GALERÍA PRINCIPAL SEO -->
+      <!-- 🔥 GALERÍA PRINCIPAL SEO CON AR OPTIMIZADO -->
       <div class="galeria">
         
-        <!-- ✅ PRODUCTO 1 - Optimizado SEO -->
+        <!-- ✅ PRODUCTO 1 - SILLA CON AR AJUSTADO -->
         <div class="modelo-container">
           <div class="nombre-producto">
             🪑 <strong>Silla Moderna 3D</strong> - Caracas
           </div>
           <model-viewer
             src="models/Prueba.glb"
-            alt="silla moderna 3d interactiva caracas venezuela"
+            alt="silla moderna 3d interactiva caracas venezuela realidad aumentada"
+            
+            <!-- 🔥 AJUSTES DE ESCALA AR OPTIMIZADOS -->
+            scale="0.7 0.7 0.7"              <!-- 📏 70% tamaño real - Perfecto para silla -->
+            min-scale="0.4 0.4 0.4"         <!-- 🔽 Zoom mínimo -->
+            max-scale="1.4 1.4 1.4"         <!-- 🔼 Zoom máximo -->
+            
+            <!-- 📍 POSICIÓN EN AR -->
+            position="0 0 -0.3"             <!-- 30cm sobre mesa/suelo -->
+            
             auto-rotate
             camera-controls
             shadow-intensity="1"
             exposure="1"
             ar
+            ar-scale="auto"                  <!-- 🎯 Escala automática inteligente -->
+            ar-placement="floor"             <!-- 🪟 Siempre en suelo -->
             loading="eager">
           </model-viewer>
           
-          <a href="https://wa.me/584128888888?text=👋%20Hola!%20Vi%20la%20**SILLA%20MODERNA%203D**%20en%20su%20web.%0A%0A📍%20Caracas%20VE%0A❓%20Disponibilidad%20y%20precio?%0A💰%20Opciones%20de%20pago%3F" 
+          <a href="https://wa.me/584128888888?text=👋%20Hola!%20Vi%20la%20**SILLA%20MODERNA%203D**%20en%20AR.%0A%0A📍%20Caracas%20VE%0A❓%20Disponibilidad%20y%20precio?%0A🪑%20Medidas%20y%20colores?" 
              class="whatsapp-btn" target="_blank">
             📱 Consultar Precio Silla
           </a>
         </div>
         
-        <!-- ✅ PRODUCTO 2 - Optimizado SEO -->
+        <!-- ✅ PRODUCTO 2 - LÁMPARA CON AR AJUSTADO -->
         <div class="modelo-container">
           <div class="nombre-producto">
             💡 <strong>Lámpara LED Industrial 3D</strong> - Caracas
           </div>
           <model-viewer
             src="models/modelo2.glb"
-            alt="lampara led industrial 3d caracas venezuela"
+            alt="lampara led industrial 3d caracas venezuela realidad aumentada"
+            
+            <!-- 🔥 AJUSTES DE ESCALA AR OPTIMIZADOS -->
+            scale="0.6 0.6 0.6"              <!-- 📏 60% - Ideal para lámpara -->
+            min-scale="0.3 0.3 0.3"         <!-- 🔽 Zoom mínimo -->
+            max-scale="1.6 1.6 1.6"         <!-- 🔼 Zoom máximo -->
+            
+            <!-- 📍 POSICIÓN EN AR -->
+            position="0 0 -0.4"             <!-- 40cm sobre superficie -->
+            
             auto-rotate
             camera-controls
             shadow-intensity="1"
-            exposure="1"
+            exposure="1.2"
             ar
+            ar-scale="auto"
+            ar-placement="floor"
             loading="lazy">
           </model-viewer>
           
-          <a href="https://wa.me/584128888888?text=👋%20Hola!%20Vi%20la%20**LÁMPARA%20LED%20INDUSTRIAL**%20en%203D.%0A%0A📍%20Caracas%20VE%0A❓%20Disponibilidad%20y%20precio?%0A💡%20Potencia%20disponible?" 
+          <a href="https://wa.me/584128888888?text=👋%20Hola!%20Vi%20la%20**LÁMPARA%20LED%20INDUSTRIAL**%20en%20AR.%0A%0A📍%20Caracas%20VE%0A❓%20Disponibilidad%20y%20precio?%0A💡%20Potencia%20y%20dimensiones?" 
              class="whatsapp-btn" target="_blank">
             📱 Consultar Precio Lámpara
           </a>
@@ -211,7 +246,7 @@
       <div class="ventajas">
         <div class="ventaja">
           <h3>🔍 Modelos 3D Interactivos</h3>
-          <p>Gira, acerca y explora cada detalle en <strong>Realidad Aumentada</strong></p>
+          <p>Gira, acerca y explora cada detalle en <strong>Realidad Aumentada</strong> 📱</p>
         </div>
         <div class="ventaja">
           <h3>🚚 Envíos Caracas y Venezuela</h3>
@@ -230,7 +265,7 @@
       <!-- ===== 📍 SEO LOCAL - Caracas Venezuela ===== -->
       <section style="background: #f8f9fa; padding: 40px; border-radius: 15px; margin-top: 40px;">
         <h2>🗺️ Muebles y Decoración 3D en Caracas, Venezuela</h2>
-        <p>Encuentra <strong>sillas modernas, lámparas LED</strong> y decoración en 3D. 
+        <p>Encuentra <strong>sillas modernas, lámparas LED</strong> y decoración en 3D con <strong>Realidad Aumentada</strong>. 
         <strong>Consulta disponibilidad WhatsApp</strong> para <strong>Caracas, Maracaibo, Valencia</strong> y toda Venezuela.</p>
       </section>
     </div>
