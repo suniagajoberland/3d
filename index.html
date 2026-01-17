@@ -4,50 +4,73 @@
     <!-- ===== 🚀 SEO ON-PAGE COMPLETO ===== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- 🎯 TÍTULOS SEO - Palabras clave principales -->
-    <title>🖼️ Modelos 3D Interactivos | Muebles y Decoración Caracas - WhatsApp</title>
-    <meta name="description" content="Explora sillas modernas, lámparas LED y decoración 3D en Caracas. Realidad Aumentada + Envíos Venezuela. Consulta precios WhatsApp 24/7." />
-    
+    <title>
+      🖼️ Modelos 3D Interactivos | Muebles y Decoración Caracas - WhatsApp
+    </title>
+    <meta
+      name="description"
+      content="Explora sillas modernas, lámparas LED y decoración 3D en Caracas. Realidad Aumentada + Envíos Venezuela. Consulta precios WhatsApp 24/7."
+    />
+
     <!-- 🔍 PALABRAS CLAVE Google -->
-    <meta name="keywords" content="modelos 3d caracas, muebles modernos venezuela, sillas 3d, lámparas led caracas, decoración 3d, tripo3d, whatsapp muebles" />
-    
+    <meta
+      name="keywords"
+      content="modelos 3d caracas, muebles modernos venezuela, sillas 3d, lámparas led caracas, decoración 3d, tripo3d, whatsapp muebles"
+    />
+
     <!-- 📱 OPEN GRAPH Redes Sociales -->
-    <meta property="og:title" content="Modelos 3D Interactivos Muebles Caracas" />
-    <meta property="og:description" content="Sillas modernas y lámparas LED en 3D con Realidad Aumentada. WhatsApp directo." />
+    <meta
+      property="og:title"
+      content="Modelos 3D Interactivos Muebles Caracas"
+    />
+    <meta
+      property="og:description"
+      content="Sillas modernas y lámparas LED en 3D con Realidad Aumentada. WhatsApp directo."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tunombre.github.io/galeria-3d" />
-    <meta property="og:image" content="https://tunombre.github.io/thumbs/portada.jpg" />
-    
+    <meta
+      property="og:image"
+      content="https://tunombre.github.io/thumbs/portada.jpg"
+    />
+
     <!-- 🚀 SCHEMA.ORG Producto -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Galería Modelos 3D Muebles Caracas",
-      "description": "Sillas modernas, lámparas LED y decoración 3D interactiva Caracas Venezuela",
-      "image": "https://tunombre.github.io/thumbs/silla.jpg",
-      "brand": {"@type": "Brand", "name": "Muebles3DCaracas"},
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "url": "https://tunombre.github.io/galeria-3d"
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Galería Modelos 3D Muebles Caracas",
+        "description": "Sillas modernas, lámparas LED y decoración 3D interactiva Caracas Venezuela",
+        "image": "https://tunombre.github.io/thumbs/silla.jpg",
+        "brand": { "@type": "Brand", "name": "Muebles3DCaracas" },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "url": "https://tunombre.github.io/galeria-3d"
+        }
       }
-    }
     </script>
-    
+
     <style>
-      * { box-sizing: border-box; }
-      
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
         background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        font-family: 'Segoe UI', -apple-system, Arial, sans-serif;
+        font-family:
+          "Segoe UI",
+          -apple-system,
+          Arial,
+          sans-serif;
         line-height: 1.6;
         color: #333;
         padding-bottom: 40px;
       }
-      
+
       /* ===== HEADER HERO ===== */
       .hero {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -58,27 +81,27 @@
         margin-bottom: 2rem;
         box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
       }
-      
+
       .hero h1 {
         font-size: clamp(1.8rem, 5vw, 3rem);
         margin: 0 0 1rem 0;
-        text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       }
-      
+
       .hero p {
         font-size: 1.2rem;
         max-width: 600px;
         margin: 0 auto;
         opacity: 0.95;
       }
-      
+
       /* ===== CONTENEDOR PRINCIPAL ===== */
       .container {
         max-width: 1400px;
         margin: 0 auto;
         padding: 0 1rem;
       }
-      
+
       /* ===== GALERÍA FLEX RESPONSIVE ===== */
       .galeria {
         display: grid;
@@ -86,23 +109,23 @@
         gap: 2rem;
         margin-bottom: 3rem;
       }
-      
+
       /* ===== TARJETAS PRODUCTO ===== */
       .modelo-container {
-        background: rgba(255,255,255,0.95);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 24px;
         padding: 2rem;
-        box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        border: 1px solid rgba(255,255,255,0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
       }
-      
+
       .modelo-container:hover {
         transform: translateY(-12px);
-        box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
       }
-      
+
       /* ===== MODEL VIEWER PERFECTO ===== */
       model-viewer {
         width: 100%;
@@ -110,18 +133,18 @@
         border-radius: 20px;
         background: linear-gradient(145deg, #ffffff, #f8fafc);
         margin-bottom: 1.5rem;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         --progress-bar-height: 4px;
         --poster-transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       }
-      
+
       /* 📱 AR CONFIGURACIÓN */
       model-viewer {
         --ar-placement: floor;
         --ar-default-access-button-shown: true;
         --ar-modes: webxr scene-viewer quick-look;
       }
-      
+
       /* ===== NOMBRE PRODUCTO ===== */
       .nombre-producto {
         font-size: clamp(1.2rem, 3vw, 1.6rem);
@@ -131,51 +154,56 @@
         text-align: center;
         line-height: 1.3;
       }
-      
+
       /* ===== BOTÓN WHATSAPP PROFESIONAL ===== */
       .whatsapp-btn {
         display: inline-flex;
         align-items: center;
         gap: 12px;
-        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
         color: white !important;
         text-decoration: none;
         padding: 1rem 2rem;
         border-radius: 50px;
         font-size: 1.1rem;
         font-weight: 600;
-        box-shadow: 
+        box-shadow:
           0 12px 32px rgba(37, 211, 102, 0.4),
-          0 4px 12px rgba(0,0,0,0.1);
+          0 4px 12px rgba(0, 0, 0, 0.1);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         text-transform: uppercase;
         letter-spacing: 0.5px;
         position: relative;
         overflow: hidden;
       }
-      
+
       .whatsapp-btn::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
         transition: left 0.6s;
       }
-      
+
       .whatsapp-btn:hover::before {
         left: 100%;
       }
-      
+
       .whatsapp-btn:hover {
         transform: translateY(-4px) scale(1.02);
-        box-shadow: 
+        box-shadow:
           0 20px 48px rgba(37, 211, 102, 0.5),
-          0 8px 20px rgba(0,0,0,0.15);
+          0 8px 20px rgba(0, 0, 0, 0.15);
       }
-      
+
       /* ===== VENTAJAS SEO ===== */
       .ventajas {
         display: grid;
@@ -183,59 +211,67 @@
         gap: 1.5rem;
         margin: 4rem 0;
       }
-      
+
       .ventaja {
-        background: rgba(255,255,255,0.9);
+        background: rgba(255, 255, 255, 0.9);
         padding: 2rem;
         border-radius: 20px;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
         text-align: center;
         transition: transform 0.3s ease;
-        border: 1px solid rgba(255,255,255,0.3);
+        border: 1px solid rgba(255, 255, 255, 0.3);
       }
-      
+
       .ventaja:hover {
         transform: translateY(-8px);
       }
-      
+
       .ventaja h3 {
         font-size: 1.4rem;
         margin-bottom: 1rem;
         color: #2d3748;
       }
-      
+
       /* ===== SEO LOCAL ===== */
       .seo-local {
         background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
         padding: 3rem 2rem;
         border-radius: 24px;
         margin-top: 3rem;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-        border: 1px solid rgba(255,255,255,0.5);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.5);
       }
-      
+
       .seo-local h2 {
         font-size: 2rem;
         text-align: center;
         margin-bottom: 1.5rem;
         color: #2d3748;
       }
-      
+
       /* ===== RESPONSIVE ===== */
       @media (max-width: 900px) {
-        .galeria { 
+        .galeria {
           grid-template-columns: 1fr;
-          gap: 1.5rem; 
+          gap: 1.5rem;
         }
-        model-viewer { height: 360px; }
-        .hero { padding: 2rem 1rem; }
+        model-viewer {
+          height: 360px;
+        }
+        .hero {
+          padding: 2rem 1rem;
+        }
       }
-      
+
       @media (max-width: 480px) {
-        model-viewer { height: 300px; }
-        .hero h1 { font-size: 1.8rem; }
-        .whatsapp-btn { 
-          padding: 0.9rem 1.5rem; 
+        model-viewer {
+          height: 300px;
+        }
+        .hero h1 {
+          font-size: 1.8rem;
+        }
+        .whatsapp-btn {
+          padding: 0.9rem 1.5rem;
           font-size: 1rem;
         }
       }
@@ -245,21 +281,25 @@
     <!-- ===== 🎯 HEADER PRINCIPAL ===== -->
     <div class="hero">
       <h1>🖼️ Modelos 3D Interactivos</h1>
-      <p>Explora <strong>sillas modernas</strong>, <strong>lámparas LED</strong> y <strong>decoración 3D</strong> en Caracas. 
-      Realidad Aumentada 📱 | Envíos Venezuela | WhatsApp 24/7</p>
+      <p>
+        Explora <strong>sillas modernas</strong>,
+        <strong>lámparas LED</strong> y <strong>decoración 3D</strong> en
+        Caracas. Realidad Aumentada 📱 | Envíos Venezuela | WhatsApp 24/7
+      </p>
     </div>
 
     <div class="container">
       <!-- 🔥 GALERÍA PRINCIPAL 3D -->
       <div class="galeria">
-        
         <!-- 🪑 SILLA MODERNA -->
         <div class="modelo-container">
           <div class="nombre-producto">
             🪑 Silla Moderna Premium
-            <span style="font-size: 0.8em; opacity: 0.7; display: block;">Caracas - Stock disponible</span>
+            <span style="font-size: 0.8em; opacity: 0.7; display: block"
+              >Caracas - Stock disponible</span
+            >
           </div>
-          
+
           <model-viewer
             src="models/Prueba.glb"
             alt="Silla moderna 3D interactiva Caracas Venezuela"
@@ -270,11 +310,16 @@
             ar
             ar-modes="webxr scene-viewer quick-look"
             loading="eager"
-            poster="https://via.placeholder.com/500x400/667eea/ffffff?text=Silla+Moderna">
+            poster="https://via.placeholder.com/500x400/667eea/ffffff?text=Silla+Moderna"
+          >
           </model-viewer>
-          
-          <a href="https://wa.me/584128888888?text=👋Hola!%20Vi%20la%20**SILLA%20MODERNA%203D**%20en%20su%20web.%0A%0A📍Caracas%20VE%0A❓Precio%20y%20disponibilidad?%0A🪑Colores%20disponibles?" 
-             class="whatsapp-btn" target="_blank" rel="noopener">
+
+          <a
+            href="https://wa.me/584128888888?text=👋Hola!%20Vi%20la%20**SILLA%20MODERNA%203D**%20en%20su%20web.%0A%0A📍Caracas%20VE%0A❓Precio%20y%20disponibilidad?%0A🪑Colores%20disponibles?"
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener"
+          >
             📱 Consultar Precio Silla
           </a>
         </div>
@@ -283,9 +328,11 @@
         <div class="modelo-container">
           <div class="nombre-producto">
             💡 Lámpara LED Industrial
-            <span style="font-size: 0.8em; opacity: 0.7; display: block;">Caracas - Envío 24h</span>
+            <span style="font-size: 0.8em; opacity: 0.7; display: block"
+              >Caracas - Envío 24h</span
+            >
           </div>
-          
+
           <model-viewer
             src="models/modelo2.glb"
             alt="Lámpara LED industrial 3D Caracas Venezuela"
@@ -296,22 +343,60 @@
             ar
             ar-modes="webxr scene-viewer quick-look"
             loading="lazy"
-            poster="https://via.placeholder.com/500x400/25D366/ffffff?text=Lámpara+LED">
+            poster="https://via.placeholder.com/500x400/25D366/ffffff?text=Lámpara+LED"
+          >
           </model-viewer>
-          
-          <a href="https://wa.me/584128888888?text=👋Hola!%20Vi%20la%20**LÁMPARA%20LED%20INDUSTRIAL**%20en%203D.%0A%0A📍Caracas%20VE%0A❓Precio%20y%20potencia?%0A💡Tiempo%20entrega?" 
-             class="whatsapp-btn" target="_blank" rel="noopener">
+
+          <a
+            href="https://wa.me/584128888888?text=👋Hola!%20Vi%20la%20**LÁMPARA%20LED%20INDUSTRIAL**%20en%203D.%0A%0A📍Caracas%20VE%0A❓Precio%20y%20potencia?%0A💡Tiempo%20entrega?"
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener"
+          >
             📱 Consultar Precio Lámpara
           </a>
         </div>
-        
+        <div class="modelo-container">
+          <div class="nombre-producto">
+            💡 Camara ezviz bateria
+            <span style="font-size: 0.8em; opacity: 0.7; display: block"
+              >Caracas - Envío 24h</span
+            >
+          </div>
+
+          <model-viewer
+            src="models/cam.glb"
+            alt="Lámpara LED industrial 3D Caracas Venezuela"
+            auto-rotate
+            camera-controls
+            shadow-intensity="1"
+            exposure="1.1"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            loading="lazy"
+            poster="https://via.placeholder.com/500x400/25D366/ffffff?text=Lámpara+LED"
+          >
+          </model-viewer>
+
+          <a
+            href="https://wa.me/584128888888?text=👋Hola!%20Vi%20la%20**LÁMPARA%20LED%20INDUSTRIAL**%20en%203D.%0A%0A📍Caracas%20VE%0A❓Precio%20y%20potencia?%0A💡Tiempo%20entrega?"
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener"
+          >
+            📱 Consultar Precio Lámpara
+          </a>
+        </div>
       </div>
 
       <!-- 💎 VENTAJAS CONVERSIÓN -->
       <div class="ventajas">
         <div class="ventaja">
           <h3>🔍 3D Interactivo + AR</h3>
-          <p>Gira, zoom y coloca en <strong>Realidad Aumentada</strong> en tu espacio 📱</p>
+          <p>
+            Gira, zoom y coloca en <strong>Realidad Aumentada</strong> en tu
+            espacio 📱
+          </p>
         </div>
         <div class="ventaja">
           <h3>🚚 Envíos Rápidos</h3>
@@ -330,14 +415,21 @@
       <!-- 📍 SEO LOCAL CARACAS -->
       <section class="seo-local">
         <h2>🗺️ Muebles 3D Caracas y Venezuela</h2>
-        <p>Encuentra <strong>sillas modernas Caracas</strong>, <strong>lámparas LED Venezuela</strong> y <strong>decoración 3D</strong> con 
-        realidad aumentada. <strong>WhatsApp directo</strong> para <strong>Caracas, Maracaibo, Valencia, Maracay</strong> y toda Venezuela.</p>
+        <p>
+          Encuentra <strong>sillas modernas Caracas</strong>,
+          <strong>lámparas LED Venezuela</strong> y
+          <strong>decoración 3D</strong> con realidad aumentada.
+          <strong>WhatsApp directo</strong> para
+          <strong>Caracas, Maracaibo, Valencia, Maracay</strong> y toda
+          Venezuela.
+        </p>
       </section>
     </div>
 
     <!-- 🎬 MODEL VIEWER - SIEMPRE ÚLTIMO -->
-    <script type="module" 
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
   </body>
 </html>
